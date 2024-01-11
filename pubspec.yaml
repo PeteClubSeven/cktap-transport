@@ -1,0 +1,20 @@
+name: cktap_transport
+description: Contains an interface for NFC operations when using the cktap_protocol plugin
+version: 0.0.1
+license: MIT
+repository: https://github.com/PeteClubSeven/cktap-transport
+funding:
+  - https://app.mash.com/e/peteclubseven
+
+environment:
+  sdk: '>=2.19.6 <4.0.0'
+  flutter: ">=3.7.12"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
