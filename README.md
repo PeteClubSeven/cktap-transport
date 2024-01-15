@@ -1,14 +1,14 @@
-Provides interfaces for NFC operations required by
-the [cktap_protocol](https://github.com/PeteClubSeven/cktap-protocol-flutter) plugin. Using a separate package allows
-the protocol plugin to be decoupled from specific NFC plugins. It also means the user can provide their own
-implementation.
+# NFC Transport Interface for the Coinkite Tap Protocol
+
+Provides an interface for the [cktap_protocol](https://github.com/PeteClubSeven/cktap-protocol-flutter) plugin to perform NFC operations. Using a separate package allows
+the protocol to be decoupled from specific NFC plugins. It also means the user can provide their own implementation if desired.
 
 ## Features
 
 - `Transport` base class
 - `TransportException` base class
 
-## Getting started
+## Getting Started
 
 Add one of the following dependencies to your `pubspec.yaml`:
 
@@ -27,7 +27,7 @@ Here's an example of implementing your own transport function:
 ```dart
 import 'dart:typed_data';
 
-import 'cktap_transport/cktap_transport.dart';
+import 'package:cktap_transport/cktap_transport.dart';
 
 /// Implement the sendBytes function
 class MyTransport extends Transport {
@@ -51,10 +51,10 @@ class MyTransportException implements TransportException {
 }
 ```
 
-## Additional information
+## Additional Information
 
 Concrete implementations exist for the following plugins:
 
 - [nfc_manager](https://github.com/okadan/flutter-nfc-manager) v3.3.0
-  - v4.0.0 will bring breaking changes so it will need updating
   - Available here: https://pub.dev/packages/cktap_transport_nfc_manager
+  - A rewrite will be required for v4.0.0 as it introduces a completely different API
