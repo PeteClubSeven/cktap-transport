@@ -7,7 +7,6 @@ abstract class TransportException implements Exception {}
 /// decoupled from individual NFC plugins whilst still using a common interface for transmitting data. It's recommended
 /// that your implementation derives Transport-related exceptions from [TransportException].
 abstract class Transport {
-
   /// Should send the raw ISO 7816 APDU to an NFC device before returning the raw response.
   /// Android: Use IsoDep
   /// iOS: Use Iso7816

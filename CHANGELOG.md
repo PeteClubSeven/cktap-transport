@@ -1,5 +1,6 @@
-## 0.1.0
+## 0.1.1
 
+* Tweak some instructions
 * Add support for iOS
 * Fix Android migration warnings
 

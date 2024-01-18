@@ -15,10 +15,10 @@ Add one of the following dependencies to your `pubspec.yaml`:
 ```yaml
 dependencies:
   # Only when implementing your own transport class
-  cktap_transport: ^0.0.1
+  cktap_transport: ^0.1.0
 
   # An implementation using the nfc_manager plugin
-  cktap_transport_nfc_manager: ^0.0.1
+  cktap_transport_nfc_manager: ^0.1.0
 ```
 
 ## Usage
@@ -55,6 +55,6 @@ class MyTransportException implements TransportException {
 
 Concrete implementations exist for the following plugins:
 
-- [nfc_manager](https://github.com/okadan/flutter-nfc-manager) v3.3.0
+- [nfc_manager](https://github.com/okadan/flutter-nfc-manager)
   - Available here: https://pub.dev/packages/cktap_transport_nfc_manager
-  - A rewrite will be required for v4.0.0 as it introduces a completely different API
+  - A rewrite will be required for v4.0.0 as nfc_manager introduces a completely different API
